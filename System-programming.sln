@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sort", "lab 2\lab 2.vcxproj
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "assembler", "lab 1\assembler.vcxproj", "{488BAE3A-CA07-43D6-A064-A2C95E093790}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lab 3", "lab 3\lab 3\lab 3.vcxproj", "{EDB4B5DB-8395-4A53-A60A-0B3343791AFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{488BAE3A-CA07-43D6-A064-A2C95E093790}.Release|x64.Build.0 = Release|x64
 		{488BAE3A-CA07-43D6-A064-A2C95E093790}.Release|x86.ActiveCfg = Release|Win32
 		{488BAE3A-CA07-43D6-A064-A2C95E093790}.Release|x86.Build.0 = Release|Win32
+		{EDB4B5DB-8395-4A53-A60A-0B3343791AFA}.Debug|x64.ActiveCfg = Debug|x64
+		{EDB4B5DB-8395-4A53-A60A-0B3343791AFA}.Debug|x64.Build.0 = Debug|x64
+		{EDB4B5DB-8395-4A53-A60A-0B3343791AFA}.Debug|x86.ActiveCfg = Debug|Win32
+		{EDB4B5DB-8395-4A53-A60A-0B3343791AFA}.Debug|x86.Build.0 = Debug|Win32
+		{EDB4B5DB-8395-4A53-A60A-0B3343791AFA}.Release|x64.ActiveCfg = Release|x64
+		{EDB4B5DB-8395-4A53-A60A-0B3343791AFA}.Release|x64.Build.0 = Release|x64
+		{EDB4B5DB-8395-4A53-A60A-0B3343791AFA}.Release|x86.ActiveCfg = Release|Win32
+		{EDB4B5DB-8395-4A53-A60A-0B3343791AFA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
