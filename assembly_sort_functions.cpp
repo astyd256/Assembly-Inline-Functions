@@ -1,9 +1,4 @@
-// lab 2.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
-#include <iostream>
-#include <stdlib.h>
-#include <time.h>
+#include <assembly_sort_functions.h>
 
 void AssemblerBubbleSort(int* adress, int n)
 {
@@ -76,60 +71,3 @@ void AssemblerSelectionSort(int* adress, int n)
         END:
     }
 }
-
-int main()
-{
-    int arr_size = 100;
-    int* array1 = new int[arr_size];
-    int* array2 = new int[arr_size];
-    srand(time(NULL));
-    for (int i = 0; i < arr_size; i++)
-    {
-        array1[i] = rand() % arr_size * ((rand() % 2 == 0) ? 1: -1);
-        array2[i] = array1[i];
-        std::cout << array1[i] << '\t';
-    }
-    std::cout << '\n';
-
-    _asm
-    {
-        push arr_size
-        push [array1]
-        call AssemblerBubbleSort
-        add ESP, 8
-    }
-
-    std::cout << "Bubble assembler sort:\n";
-    for (int i = 0; i < arr_size; i++)
-    {
-        std::cout << array1[i] << '\t';
-    }
-    std::cout << '\n';
-    _asm
-    {
-        push arr_size
-        push[array2]
-        call AssemblerSelectionSort
-        add ESP, 8
-    }
-
-    std::cout << "Selection assembler sort:\n";
-    for (int i = 0; i < arr_size; i++)
-    {
-        std::cout << array2[i] << '\t';
-    }
-
-
-
-}
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
